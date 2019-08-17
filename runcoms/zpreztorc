@@ -35,6 +35,14 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'homebrew' \
+  'osx' \
+  'git' \
+  'docker' \
+  'ssh' \
+  'tmux' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #
@@ -71,6 +79,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:log:oneline' format '%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset'
 
 #
 # GNU Utility
