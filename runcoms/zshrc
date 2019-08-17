@@ -11,3 +11,20 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/Projects/veracode/platform-working:$PATH"
+export PATH="$HOME/vpn-tools:$PATH"
+export PATH="$HOME/Projects/sourceclear/dev-env:$PATH"
+
+# Fix GPG - see: https://github.com/keybase/keybase-issues/issues/2798
+export GPG_TTY=$(tty)
+
+alias gonvm='export NVM_DIR="$HOME/.nvm";. "/usr/local/opt/nvm/nvm.sh"; nvm use 10.15.0 > /dev/null'
+alias gopy2='export PATH=$HOME/Library/Python/2.7/bin:$PATH'
+alias gopy3='export PATH=/usr/local/opt/python/libexec/bin:$HOME/Library/Python/3.7/bin:$PATH'
+
+alias k1='kubectl --context=ops1'
+alias k2='kubectl --context=o2'
+
+
